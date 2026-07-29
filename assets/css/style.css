@@ -1,0 +1,197 @@
+/* ==========================
+   VARIABLES
+========================== */
+
+:root{
+    --primary:#E63946;
+    --secondary:#FFC300;
+    --dark:#121212;
+    --light:#ffffff;
+    --gray:#f5f5f5;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:var(--light);
+    color:var(--dark);
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+
+.navbar{
+    background:rgba(0,0,0,.55);
+    backdrop-filter:blur(12px);
+    transition:.3s;
+}
+
+.navbar-brand{
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+.btn-warning{
+    background:var(--secondary);
+    border:none;
+    color:#000;
+    font-weight:600;
+}
+
+.btn-warning:hover{
+    background:#ffcf33;
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.hero{
+    position:relative;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:url("../img/hero.jpg") center center/cover no-repeat;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.55);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    color:white;
+}
+
+.hero h1{
+    font-size:2.7rem;
+    font-weight:800;
+}
+
+.hero p{
+    margin:25px 0;
+    font-size:1.1rem;
+}
+
+/* ==========================
+   SECCIONES
+========================== */
+
+section{
+    padding:80px 0;
+}
+
+section h2{
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+/* ==========================
+   CARDS
+========================== */
+
+.card{
+    border-radius:18px;
+    overflow:hidden;
+    transition:.35s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    height:220px;
+    object-fit:cover;
+}
+
+/* ==========================
+   INSTAGRAM
+========================== */
+
+.bg-dark{
+    background:#111!important;
+}
+
+/* ==========================
+   WHATSAPP
+========================== */
+
+.whatsapp{
+    position:fixed;
+    right:18px;
+    bottom:20px;
+
+    width:60px;
+    height:60px;
+
+    background:#25D366;
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    color:white;
+
+    font-size:30px;
+
+    text-decoration:none;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+    z-index:999;
+}
+
+.whatsapp:hover{
+    color:white;
+    transform:scale(1.08);
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+    background:#000;
+}
+
+footer h5{
+    font-weight:700;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media (min-width:768px){
+
+.hero h1{
+    font-size:4.3rem;
+}
+
+.hero p{
+    width:70%;
+    margin:auto;
+    margin-top:20px;
+    margin-bottom:35px;
+}
+
+}
+
+Añadir style.css
